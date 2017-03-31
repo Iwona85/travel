@@ -1,0 +1,72 @@
+<! doctype html>
+<head>
+	<meta charset="utf-8">
+	<title>KALETNIK</title>
+	<link rel="stylesheet" href="css/style.css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<!-- # page-wrap zawiera cała strone -->
+<div id="page-wrap">
+
+<!-- header -->
+	<div id="header">
+			<nav class="navigation">	
+				<ul>
+					<li><a href="index.html" title="home">Home</a></li>
+					<li><a href="blog.html" title="blog">Blog</a></li>
+					<li><a class="active" href="contact.html" title="contact">Kontakt</a></li>
+					<li><a href="gallery.html" title="gallery">Galeria</a></li>
+				</ul>
+			</nav>
+	</div>
+		
+<!-- MAIN CONTENT JAKO div -->
+	<div id="content">
+	<!-- logo -->
+		<div id="logo">
+			<img class="displayed" src="img/travel.jpg" alt="The Travel" width="500" height="300">
+		</div>
+	<!-- koniec logo -->
+
+	<!-- formularz -->
+	<div id="formularz">
+	<p>Formularz kontaktowy:</p>
+	<p>Imię:</p>
+	<input type="text" name="imie">
+	<p>Nazwisko:</p>
+	<input type="text" name="nazwisko">
+	<p>e-mail:</p>
+	<input type="text" name="email">
+	<p>Wiadomość:</p>
+	<textarea name="wiadomosc" rows="8" cols="35"></textarea>
+	</br>
+	<button id="button" type="button" onclick="alert('Twoja wiadomość została wysłana')">Wyślij</button>
+	</div>
+
+	<!-- koniec formularza  -->
+
+	<!--google maps -->
+	<div id="maps">
+			<iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=Warszawa,+Poland&key=AIzaSyAN0om9mFmy1QN6Wf54tXAowK4eT0ZUPrU">
+			</iframe>
+	</div>
+	<!--koniec google maps -->
+
+	</div>
+
+
+		
+<!-- FOOTER -->
+<div id="footer">
+	<img src="img/travel.jpg" alt="The Travel" height="35">
+	<p>Copyrights © 2017 The Travel. All Rights Reserved.</p>
+</div>
+
+
+<!-- div poniżej zamyka całą stronę -->
+</div>
+
+
+</body>
+</html>
