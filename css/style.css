@@ -7,45 +7,56 @@
 
 body{
 	background:#E6E6FA;
-	font-family: "Alegreya", sans-serif;
+	font-family: "verdana";
 	margin:0;
 	color: #778899;
 }
 
-h2{
-	font-size: 200%;
-	text-align: center;
-	padding-top: 2%;
-}
 
-h3{
-	font-size:  175%;
-	padding: 5% 0;
-}
 
-p{
-	font-size: 150%;
-	padding: 3%;
-	text-indent: 2%;
-	text-align: justify;
-}
-
+/*-- HEADER --*/
 
 header{
 	max-width: 1500px;
 	width:100%;
 	height: 70px;
 	background: black;
-	position: fixed;
 }
 
 #logo{
 	float: left;
-	width: 150px;
+	width: 100px;
 	height: 70px;
-	margin: 0 20px 0 50px;
+	margin: 0 15px 0 20px;
 	background: url(C:/Users/Iwona/projects/travel/img/logo.png) no-repeat center;
 }
+
+.navigation{
+	display:inline-block;
+}
+
+nav ul li {
+	list-style-type: none;
+	display:inline-block;
+	letter-spacing: 2;
+	height: 70px;
+	padding: 0 15px;
+}
+
+
+nav ul li a{
+	font-size: 15px;
+	font-family: verdana;
+	text-decoration: none;
+	color:white;
+	line-height: 75px;
+}
+
+nav ul li:hover{
+	background-color: #feaf12;
+}
+
+
 
 .social{
 	float: right;
@@ -65,38 +76,153 @@ header{
 }
 
 
-.navigation{
-	display:inline-block;
+#menu-icon{
+	display: none;
+	width: 40px;
+	height: 70px;
+	background: url(C:/Users/Iwona/projects/travel/img/nav.png) no-repeat center;
 }
 
+
+/*-- BANNER --*/
+.banner{
+	max-width:1500px;
+	width:100%;
+	height: 550px;
+	background-color:yellow;
+}
+
+.banner img{
+    display: inline;
+    margin: auto;
+    float: left;
+    max-width:400px;
+    width:100%;
+}
+
+
+
+/*--4-section--*/
+
+
+.one-fourth{
+	max-width: 400px;
+	width: 100%;
+	float:left;
+	text-align: center;
+}
+
+#one{
+	background-color: #A9A9A9;
+}
+
+#two{
+	background-color: #A9A9A9;
+}
+
+#tree{
+	background-color: #FF6347;
+}
+
+#four{
+	background-color: #A9A9A9;
+}
+
+
+
+/*-----MEDIA QUERIES------*/
+
+/* iPads (portrait and landscape) ----------- */
+@media screen and (max-width: 1024px){
+
+#logo{
+	margin: 0 20px 0 20px;
+}
+
+
 nav ul li {
-	list-style-type: none;
-	display:inline-block;
-	height: 70px;
-	padding: 0 20px;
+	letter-spacing: 1;
+	padding: 0 5px;
 }
 
 
 nav ul li a{
+	font-size: 14px;
+}
+
+.social{
+	margin-right: 20px;
+}
+
+.social a{
+	padding-left: 5px;
+}
+
+}
+
+/* Large screen mobiles */
+@media only screen and (max-width: 767px){
+	#menu-icon{
+		display: inline-block;
+		margin-left: 50px;
+	}
+
+
+
+	nav ul{
+		display: none;
+		position: absolute; 
+		background:black;
+		width: 35%;
+	}
+
+	nav:hover ul{
+		display: block;
+	}
+
+	nav li{
+		text-align: center;
+		width: 100%;
+	}
+
+
+	nav ul li {
+		height: 30px;
+		padding: 10px 0;
+	}
+
+nav ul li a{
 	font-size: 15px;
 	font-family: verdana;
-	text-decoration: none;
-	letter-spacing: 3;
-	color:white;
-	line-height: 75px;
+	line-height: 25px;
 }
-
-nav ul li:hover{
-	background-color: #feaf12;
 
 }
 
 
 
-menu-icon{
-	display: none;
-	width: 40px;
-	height: 40px;
-	background: url(#) center;
+
+/* iPhones and other mobiles*/
+@media only screen and (max-width: 480px) {
+	
+	#menu-icon{
+		display: inline-block;
+		margin-left: 20px;
+
+	}
+
+
+	nav ul{
+		display: none;
+	}
+
+	.social{
+	font-size: 15px;
+	}
+
+	.social a{
+		padding-left: 5px;
+	}
+
 }
 
