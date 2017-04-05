@@ -6,13 +6,18 @@
 
 
 body{
-	background:#E6E6FA;
 	font-family: "verdana";
 	margin:0;
-	color: #778899;
 }
 
+h2{
+	color: black;
+}
 
+p{
+	font-size: 15px;
+	color: black;
+}
 
 /*-- HEADER --*/
 
@@ -85,48 +90,45 @@ nav ul li:hover{
 
 
 /*-- BANNER --*/
-.banner{
-	max-width:1500px;
-	width:100%;
-	height: 550px;
-	background-color:yellow;
-}
-
-.banner img{
-    display: inline;
-    margin: auto;
-    float: left;
-    max-width:400px;
-    width:100%;
+.banner {
+	width: 100%;
+	margin-top: 10px;
 }
 
 
+.banner-inner {
+	width: 70%;
+	margin:auto;
+}
 
-/*--4-section--*/
+.banner-inner img{
+	width: 100%;
+}
 
+
+/*------4 SECTION-----*/
 
 .one-fourth{
-	max-width: 400px;
-	width: 100%;
-	float:left;
+	float: left;
+	width: 33.333%;
 	text-align: center;
+	margin: 10px 0;
+	border-bottom: 1px solid black;
 }
 
-#one{
-	background-color: #A9A9A9;
+.one-fourth img{
+	width:100%;
+	border: 10px solid white;
 }
 
-#two{
-	background-color: #A9A9A9;
+.one-fourth p{
+	padding:15px;
 }
 
-#tree{
-	background-color: #FF6347;
+.one-fourth h2{
+	padding-top:15px;
 }
 
-#four{
-	background-color: #A9A9A9;
-}
 
 
 
@@ -207,8 +209,6 @@ nav ul li a{
 	
 	#menu-icon{
 		display: inline-block;
-		margin-left: 20px;
-
 	}
 
 
@@ -217,12 +217,9 @@ nav ul li a{
 	}
 
 	.social{
-	font-size: 15px;
+	display: none;
 	}
 
-	.social a{
-		padding-left: 5px;
-	}
 
 }
 
