@@ -8,16 +8,34 @@
 body{
 	font-family: "verdana";
 	margin:0;
+	color: black;
 }
 
+
 h2{
-	color: black;
+	font-size: 20px;
 }
 
 p{
 	font-size: 15px;
-	color: black;
 }
+
+
+main a{
+	background-color:#feaf12;
+	color:black;
+	padding: 10px 15px;
+	text-align:center;
+	text-decoration:none;
+	font-size:15px;
+	border-radius: 5px;
+}
+
+main a:hover{
+	background-color:black;
+	color:white;
+}
+
 
 /*-- HEADER --*/
 
@@ -89,45 +107,83 @@ nav ul li:hover{
 }
 
 
-/*-- BANNER --*/
-.banner {
-	width: 100%;
-	margin-top: 10px;
+.content{
+	overflow: auto;
 }
 
 
-.banner-inner {
-	width: 70%;
-	margin:auto;
+
+/*---2 SECTION---*/
+.two{
+	float:left;
+	width: 50%;
+	text-align: center;
+	margin: 10px 0;
+	border-bottom: 1px solid black;
+	background-color: transparent;	
 }
 
-.banner-inner img{
-	width: 100%;
+.two img{
+	width:98%;
+}
+
+.two p{
+	padding:15px;
+}
+
+.two h2{
+	padding-top:15px;
 }
 
 
-/*------4 SECTION-----*/
+/*---3 SECTION---*/
 
-.one-fourth{
+.three{
 	float: left;
 	width: 33.333%;
 	text-align: center;
 	margin: 10px 0;
-	border-bottom: 1px solid black;
+	border-bottom: 1px solid black;	
+	background-color: transparent;
 }
 
-.one-fourth img{
-	width:100%;
-	border: 10px solid white;
+.three img{
+	width:98%;
 }
 
-.one-fourth p{
+.three p{
 	padding:15px;
 }
 
-.one-fourth h2{
+.three h2{
 	padding-top:15px;
 }
+
+
+
+/*----FOOTER----*/
+
+footer{
+	width: 100%;
+	height:40px;
+	background-color: black;
+}
+
+footer p{
+	float: right;
+	font-size:10px;
+	margin-right: 5%;
+	line-height: 40px;
+	color: white;
+}
+
+footer img{
+	float: left;
+	height: 40px;
+	margin-left: 20px;
+}
+
+
 
 
 
