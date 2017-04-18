@@ -109,18 +109,54 @@ nav ul li:hover{
 
 .content{
 	overflow: auto;
+	min-height: 1000px;
+	height: 100%;
+}
+
+
+
+/*---1 SECTION---*/
+
+.first{
+	width: 100%;
+	background-color: red;
+	height: 170px;
+	margin-top: 10px;
+}
+
+
+.image{
+	float:left;
+	width: 70%;
+	text-align: center;
+	background-color: red;
+}
+
+.image img{
+	width: 80%;
+	height: auto;
+}
+
+.text{
+	float:right;
+	width: 30%;
+	text-align: center;
 }
 
 
 
 /*---2 SECTION---*/
+.second{
+	width: 100%;
+	border-bottom: 1px solid black;	
+}
+
 .two{
 	float:left;
 	width: 50%;
 	text-align: center;
 	margin: 10px 0;
-	border-bottom: 1px solid black;
-	background-color: transparent;	
+	background-color: green;
 }
 
 .two img{
@@ -138,13 +174,17 @@ nav ul li:hover{
 
 /*---3 SECTION---*/
 
+.third{
+	width: 100%;
+	border-bottom: 1px solid black;	
+}
+
 .three{
 	float: left;
 	width: 33.333%;
 	text-align: center;
 	margin: 10px 0;
-	border-bottom: 1px solid black;	
-	background-color: transparent;
+	background-color: blue;
 }
 
 .three img{
@@ -158,6 +198,33 @@ nav ul li:hover{
 .three h2{
 	padding-top:15px;
 }
+
+/*----4 SECTIONS---*/
+
+.fourth{
+	width: 100%;
+}
+
+
+.four{
+	width: 25%;
+	float:left;
+	text-align: center;
+	margin: 20px 0;
+	padding-top: 10px;
+	border-top:1px solid black;
+	background-color: yellow;
+}
+
+.four img{
+	margin: auto;
+	display: block;
+}
+
+.four p{
+	margin: 10px 15px;
+}
+
 
 
 

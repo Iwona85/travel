@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="shortcut icon" type="image/jpg" href="img/favicon.jpg">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
 <body>
@@ -34,9 +35,38 @@
 		</div>
 </header>
 
-
-
 <main class="content">
+
+<p id="demo">paragraf</p>
+<button type="button" onclick="myFunction()">Sprawdz</button>
+
+<script>
+	function myFunction() {
+		document.getElementById("demo").innerHTML="został zmieniony";
+	}
+</script>
+
+
+<p>wynik działania:</p>
+<p id="wynik"></p>
+<script>
+	var x, y, z;
+	x=4;
+	y=5;
+	z=x+y;
+	document.getElementById("wynik").innerHTML="Iwona " + z;
+</script>
+
+
+
+
+
+
+
+
+
+
+
 
 
 
