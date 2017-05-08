@@ -153,6 +153,8 @@ zadanie();
 setInterval(zadanie, 1000);
 
 </script>
+
+<br>
 <p>Zadanie #4</p>
 <p>Pole trójkąta: </p>
 <p id="pole"></p>
@@ -165,29 +167,185 @@ setInterval(zadanie, 1000);
 	document.getElementById("pole").innerHTML=area;
 </script>
 
+<br>
+<p>Zadanie #5</p>
+<p id="zdanie"></p>
+
+<script type="text/javascript">
+	var slowo = "Zapraszamy";
+	document.getElementById("zdanie").innerHTML = slowo;4
+
+	setInterval(function(){
+		var pierwszaLitera = slowo.slice(0, 1);
+		var reszta = slowo.slice(1);
+		slowo = reszta + pierwszaLitera;
+		document.getElementById("zdanie").innerHTML = slowo;
+	}, 900);
+</script>
 
 <br>
-<div id="result">w3resource</div>
+<p>Zadanie #5</p>
+<p id="new"></p>
+<script type="text/javascript">
+	var word = "Zapraszamy";
+	document.getElementById("new").innerHTML = word;
+
+	setInterval(function(){
+		var pierwsza = word.slice(-1);
+		var ostatnia = word.slice(0, -1);
+		word = pierwsza + ostatnia;
+		document.getElementById("new").innerHTML = word;
+	}, 800);
+</script>
+
+<br>
+<p>Zadanie #6</p>
+<button onclick="leap()">sprawdz rok przestępny</button>
+<p id="demo"></p>
 <script type="text/javascript">
 
+function leap(){
+	var year = prompt("wpisz rok");
+	if (year % 4 === 0 && year % 100 !== 0 || year % 400 ===0){
+		document.getElementById("demo").innerHTML= "Rok " + year + " jest rokiem przestępnym";
+	} else {
+		document.getElementById("demo").innerHTML = "Rok " + year + " NIE jest rokiem przestępnym";
+	};
+};
+</script>
 
+<br>
+<p>HTML forms</p>
+<br>
+<p>Napisz e-mail:</p>
+<form action="#" method="post">
+	Imię:<br>
+	<input type="text" name="firstname" value="wpisz imię"><br><br>
+	Nazwisko:<br>
+	<input type="text" name="lastname" value="wpisz nazwisko"><br><br>
+	E-mail:<br>
+	<input type="text" name="mail" value="wpisz swój e-mail"><br><br>
+	Treść:<br>
+	<input type="text" name="comment" size="30"><br><br>
+	<input
+	<input type="reset" value="reset"><br><br>
+	kolor: <br>
+	<input type="color" name="color"><br>
+	data:<br>
+	<input type="date" name="date"><br>
+	datetime-local:<br>
+	<input type="datetime-local" name="datetime-local"><br>
+	email:<br>
+	<input type="email" name="email"><br>
+	month:<br>
+	<input type="month" name="month"><br>
+	number:<br>
+	<input type="number" name="number" min="0" max="10"><br>
+	range:<br>
+	<input type="range" name="range" min="0" max="100"><br>
+	search:<br>
+	<input type="search"><br>
+	time:<br>
+	<input type="time"><br>
+	week:<br>
+	<input type="week"><br>
+</form>
 
-    var word = 'iwona';
+<br>
+<p>Zadanie #6</p>
+<p id="rok"></p><br>
+<button type="button" onclick="spr_rok()">Sprawdź</button>
+<script type="text/javascript">
+	function spr_rok(){
+		var rok = prompt("wpisz rok");
+		if (rok % 4 === 0 && rok % 100 !== 0 || rok % 400 === 0){
+			document.getElementById("rok").innerHTML = "Rok " + rok + " jest przestępny"
+		} else {
+			document.getElementById("rok").innerHTML= "Rok " + rok + " nie jest przestępny"
+		};
+	};
+</script>
 
+<br>
+<p>TEST</p>
+<script type="text/javascript">
 
-    function rotate() {
-        var last = word.slice(-1);
-        var curr = word.slice(0,-1);
-        word = last+curr;
-        document.getElementById('result').innerHTML = word;
-    };
-
-    document.getElementById('result').innerHTML = word;
-    rotate();
-    setInterval(rotate,1000);
-
+for(var year = 2014; year<=2050; year++){
+	var d = new Date(year, 0, 1);
+	if( d.getDay() ===0){
+		console.log("1 stycznia zaczyna się w niedzielę w " + year);
+	};
+};
 
 </script>
+<br>
+
+<p>Zadanie #8</p>
+<script type="text/javascript">
+	var number = prompt("wpisz liczbę od 1 d0 10");
+	var dana = Math.ceil(Math.random() * 10);
+	if( number ==  dana){
+		alert("Liczby się zgadzają. wylosowana liczba to " + dana);
+	}else{
+		alert("Liczby nie pasują. Wylosowana liczba to " + dana);
+	};
+</script>
+
+<br>
+<p>Zadanie #9</p>
+<script type="text/javascript">
+	var today = new Date();
+	var xmas = new Date(today.getFullYear(), 11, 25);
+	var mili = xmas.getTime() - today.getTime();
+	
+
+	//dzisiaj jest 25.12, czyli kolejne święta są za rok
+	if(today.getMonth()===11 && today.getDate()===25){
+		var xmas = new Date((today.getFullYear()+1), 11, 25);
+		var mili = xmas.getTime() - today.getTime();
+		var ile_dni = mili / (1000*3600*24);
+		//console.log(Math.ceil(ile_dni));
+		console.log("dzisiaj są święta, więc kolejne będą za " + (Math.ceil(ile_dni))+ " dni");
+	} 
+
+	//dzisiaj po świętach
+	if(today.getMonth() === 11 && today.getDate() > 25){
+		var do_konca = 31 - today.getDate();
+		var xmas = ile_dni + do_konca;
+		console.log("Następne święta będą za " + Math.ceil(xmas))
+
+	//dzisiaj jest przed świętami
+	} else {
+		console.log("Święta będą za " + (Math.ceil(mili / (1000 * 3600 * 24))) + " dni");
+	}
+
+</script>
+<br>
+<p>Zadanie #10</p><br>
+<p>1st Number: <br>
+<input type="text" id="first"></p>
+<p>2nd Number: <br>
+<input type="text" id="second">
+</p>
+<button onclick="multiply()" value="multiply">Multiply</button>
+<button onclick="divide()" value="divide">Divide</button>
+<p>Result is: <br>
+<span id="result"></span></p>
+<script>
+
+	function multiply(){
+		num1=document.getElementById("first").value;
+		num2=document.getElementById("second").value;
+		document.getElementById("result").innerHTML = num1 * num2;
+	};
+
+	function divide(){
+		num1=document.getElementById("first").value;
+		num2=document.getElementById("second").value;
+		document.getElementById("result").innerHTML = num1 / num2;
+	};
+</script>
+
 
 
 
