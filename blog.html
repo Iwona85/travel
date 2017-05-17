@@ -231,37 +231,22 @@ function leap(){
 	<input type="reset" value="reset"><br><br>
 	kolor: <br>
 	<input type="color" name="color"><br>
-	data:<br>
-	<input type="date" name="date"><br>
-	datetime-local:<br>
-	<input type="datetime-local" name="datetime-local"><br>
-	email:<br>
-	<input type="email" name="email"><br>
-	month:<br>
-	<input type="month" name="month"><br>
-	number:<br>
-	<input type="number" name="number" min="0" max="10"><br>
-	range:<br>
-	<input type="range" name="range" min="0" max="100"><br>
-	search:<br>
-	<input type="search"><br>
-	time:<br>
-	<input type="time"><br>
-	week:<br>
-	<input type="week"><br>
 </form>
 
 <br>
 <p>Zadanie #6</p>
-<p id="rok"></p><br>
+<p>Wpisz rok, żeby sprawdzić czy jest przestępny</p>
+<input type="number" id="rok">
 <button type="button" onclick="spr_rok()">Sprawdź</button>
+<p id="wynik"></p>
+
 <script type="text/javascript">
 	function spr_rok(){
-		var rok = prompt("wpisz rok");
+		rok=document.getElementById("rok").value;
 		if (rok % 4 === 0 && rok % 100 !== 0 || rok % 400 === 0){
-			document.getElementById("rok").innerHTML = "Rok " + rok + " jest przestępny"
+			document.getElementById("wynik").innerHTML = "Rok " + rok + " jest przestępny"
 		} else {
-			document.getElementById("rok").innerHTML= "Rok " + rok + " nie jest przestępny"
+			document.getElementById("wynik").innerHTML= "Rok " + rok + " nie jest przestępny"
 		};
 	};
 </script>
@@ -280,7 +265,7 @@ for(var year = 2014; year<=2050; year++){
 </script>
 <br>
 
-<p>Zadanie #8</p>
+<p>Zadanie #8 consola</p>
 <script type="text/javascript">
 	var number = prompt("wpisz liczbę od 1 d0 10");
 	var dana = Math.ceil(Math.random() * 10);
@@ -292,7 +277,7 @@ for(var year = 2014; year<=2050; year++){
 </script>
 
 <br>
-<p>Zadanie #9</p>
+<p>Zadanie #9 consola</p>
 <script type="text/javascript">
 	var today = new Date();
 	var xmas = new Date(today.getFullYear(), 11, 25);
@@ -346,7 +331,46 @@ for(var year = 2014; year<=2050; year++){
 	};
 </script>
 
+<br>
+<p>Zadanie #11</p>
+<p>Wpisz temperaturę w F:</p>
+<input type="number" id="fahrenheit">
+<button onclick="toCelsius()" value="celsius">Przelicz na C</button>
+<p>W przeliczeniu na Celsius wychodzi: <span id="wynik_c"></span> C.</p>
+<br>
+<p>Wpisz temperaturę w C: </p>
+<input type="number" id="cels">
+<button onclick="toFahrenheit()">Przelicz na F</button>
+<p>W przeliczeniu na Fahrenheit wychodzi <span id="fahr"></span> F.</p>
+<script type="text/javascript">
+	function toCelsius(){
+		fahrenheit = document.getElementById("fahrenheit").value;
+		celsius = (fahrenheit - 32) / 1.8;
+		document.getElementById("wynik_c").innerHTML = celsius;
+	};
 
+	function toFahrenheit(){
+		cels = document.getElementById("cels").value;
+		fahr = (cels * 1.8) + 32;
+		document.getElementById("fahr").innerHTML= fahr;
+	};
+</script>
+
+<br>
+<p>JavaScript String #1</p>
+<input type="text" id="wpisane">
+<button onclick="check()">Sprawdź</button>
+
+<p id="wynik3"></p>
+<p id="wynik4"></p>
+<script type="text/javascript">
+
+function check(){
+	var dana3 = document.getElementById("wpisane").value;
+	document.getElementById("wynik3").innerHTML = "wyszlo " + dana3;
+	document.getElementById("wynik4").innerHTML = "wyszlo " + typeof dana3;
+};
+</script>
 
 
 </main>

@@ -55,7 +55,7 @@ header{
 }
 
 .navigation{
-	display:inline-block;
+	display:inline;
 }
 
 nav ul li {
@@ -79,6 +79,10 @@ nav ul li:hover{
 	background-color: #feaf12;
 }
 
+
+li.active{
+	background-color: pink;
+}
 
 
 .social{
@@ -115,35 +119,6 @@ nav ul li:hover{
 
 
 
-/*---1 SECTION---*/
-
-.first{
-	width: 100%;
-	background-color: red;
-	height: 170px;
-	margin-top: 10px;
-}
-
-
-.image{
-	float:left;
-	width: 70%;
-	text-align: center;
-	background-color: red;
-}
-
-.image img{
-	width: 80%;
-	height: auto;
-}
-
-.text{
-	float:right;
-	width: 30%;
-	text-align: center;
-}
-
-
 
 /*---2 SECTION---*/
 .second{
@@ -176,7 +151,6 @@ nav ul li:hover{
 
 .third{
 	width: 100%;
-	border-bottom: 1px solid black;	
 }
 
 .three{
@@ -184,11 +158,10 @@ nav ul li:hover{
 	width: 33.333%;
 	text-align: center;
 	margin: 10px 0;
-	background-color: blue;
 }
 
 .three img{
-	width:98%;
+	width:85%;
 }
 
 .three p{
@@ -196,6 +169,29 @@ nav ul li:hover{
 }
 
 .three h2{
+	padding-top:15px;
+}
+
+.one-three {
+	float: left;
+	width: 33.333%;
+	text-align: center;
+	margin: 10px 0;
+}
+
+.one-three img{
+	width:85%;
+	margin-top: 20px;
+}
+
+
+
+.one-three p{
+	padding:15px;
+	margin: 15px;
+}
+
+.one-three h2{
 	padding-top:15px;
 }
 
@@ -225,7 +221,14 @@ nav ul li:hover{
 	margin: 10px 15px;
 }
 
+/*---3 columns ----*/
 
+.news {
+    column-count: 3;
+    column-width: 100px;
+    column-gap: 40px;
+    column-rule: 1px solid black;
+}
 
 
 /*----FOOTER----*/
