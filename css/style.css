@@ -21,87 +21,97 @@ p{
 }
 
 
-main a{
+ a.camera{
 	background-color:#feaf12;
 	color:black;
-	padding: 10px 15px;
+	padding: 7px;
 	text-align:center;
 	text-decoration:none;
 	font-size:15px;
 	border-radius: 5px;
+	margin: 8px;
 }
 
-main a:hover{
+a:hover.camera {
 	background-color:black;
 	color:white;
 }
 
+p.data{
+	color: #A0A0A0;
+	font-family: Helvetica;
+    font-size: 15px;
+}
 
 /*-- HEADER --*/
 
 header{
 	max-width: 1500px;
 	width:100%;
-	height: 70px;
 	background: black;
+	margin-top:0;
+	height: 70px;
 }
 
 #logo{
 	float: left;
 	width: 100px;
 	height: 70px;
-	margin: 0 15px 0 20px;
+	margin: 0 15px 0 7%;
 	background: url(C:/Users/Iwona/projects/travel/img/logo.png) no-repeat center;
 }
 
+
+/*---NAWIGACJA---*/
+
+
 .navigation{
-	display:inline;
+	float: left;
 }
 
-nav ul li {
-	list-style-type: none;
+.navigation li {
 	display:inline-block;
 	letter-spacing: 2;
-	height: 70px;
-	padding: 0 15px;
 }
 
 
-nav ul li a{
-	font-size: 15px;
+.navigation a{
+	font-size: 16px;
 	font-family: verdana;
 	text-decoration: none;
 	color:white;
-	line-height: 75px;
+	padding: 15px;
+	display: block;
+	border-radius: 5px;
+	margin-top: 10px;
 }
 
-nav ul li:hover{
+.navigation a:hover{
 	background-color: #feaf12;
 }
 
-
-li.active{
-	background-color: pink;
+.navigation a.active {
+	background-color: #feaf12;
 }
-
 
 .social{
 	float: right;
-	font-size: 20px;
-	height: 70px;
-	line-height: 75px;
-	margin-right: 50px;
+	margin-right: 7%;
 }
+
 
 .social a{
 	color: white;
-	padding-left: 15px;
+	font-size: 24px;
+	padding: 25px 10px;
+	line-height: 70px;
 }
 
 .social a:hover{
 	color: #feaf12;
 }
 
+/*-----kONIEC NAWIGACJI-----*/
 
 #menu-icon{
 	display: none;
@@ -115,6 +125,8 @@ li.active{
 	overflow: auto;
 	min-height: 1000px;
 	height: 100%;
+	margin-left: 7%;
+	margin-right: 7%;
 }
 
 
@@ -176,20 +188,19 @@ li.active{
 	float: left;
 	width: 33.333%;
 	text-align: center;
-	margin: 10px 0;
 }
 
 .one-three img{
-	width:85%;
+	width:90%;
 	margin-top: 20px;
 }
 
 
-
 .one-three p{
-	padding:15px;
+	padding:10px;
 	margin: 15px;
 }
+
 
 .one-three h2{
 	padding-top:15px;
@@ -221,16 +232,85 @@ li.active{
 	margin: 10px 15px;
 }
 
-/*---3 columns ----*/
 
-.news {
-    column-count: 3;
-    column-width: 100px;
-    column-gap: 40px;
-    column-rule: 1px solid black;
+/*----article---*/
+
+.article {
+	width: 70%;
+	float: left;
+}
+
+article {
+	width: 90%;
+}
+
+.article h1{
+	border-bottom: 5px solid #f2f2f2;
+	padding-bottom: 10px;
+	margin: 20px 0;
+}
+
+.article p{
+	color: #414141;
 }
 
 
+.article img{
+	height: 5%;
+}
+
+blockquote{
+	font-size: 16px;
+    text-align: center;
+    margin: 40px 70px;
+    padding: 0 0 0 35px;
+    color: #414141;
+    background: url(C:/Users/Iwona/projects/travel/img/quotes.png) no-repeat top left;
+}
+
+blockquote p{
+	font-size: 16px;
+	padding-right: 25px !important;
+	background: url(C:/Users/Iwona/projects/travel/img/quotes.png) no-repeat bottom right;
+}
+
+
+/*---sidebar---*/
+
+.sidebar{
+	width: 30%;
+	float: right;
+}
+
+.sidebar p{
+	font-size:12px;
+}
+
+.sidebar img{
+	margin-right: 10px;
+	float: left;
+}
+
+.sidebar li{
+	list-style-type: none;
+	padding: 25px 0 25px 0;
+	border-bottom: 1px solid #f0eee9;
+}
+
+.sidebar h4{
+	border-bottom: 5px solid #f2f2f2;
+	padding-bottom: 10px;
+	margin: 30px 0 0 0;
+}
+
+.sidebar a{
+	color: #414141;
+	text-decoration: none;
+}
+
+.sidebar a:hover{
+	text-decoration: underline;
+}
 /*----FOOTER----*/
 
 footer{
