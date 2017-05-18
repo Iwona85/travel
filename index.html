@@ -33,75 +33,138 @@
 		</nav>
 </header>
 
+<!--Slider-->
+
+
+<div class="slidercontainer"> 
+
+    <div class="showSlide">
+    	<img class="face" src="img/face.jpg">
+    	<p class="autor">Malesuada Etiam</p>
+    	<a href="blog.html"><h4>Maecenas elit lectus felis</h4> 
+    	<p>Fusce laoreet vestibulum nunc nec rutrum. Nulla sed sapien felis.</p></a>
+        <img class="slide" src="img/s1.jpg">  
+    </div>  
+
+    <div class="showSlide">
+    	<img class="face" src="img/face.jpg"> 
+    	<p class="autor">Malesuada Etiam</p>
+    	<a href="design.html"><h4>Suspendisse a pellentesque dui</h4> 
+    	<p>Fusce laoreet vestibulum nunc nec rutrum. Nulla sed sapien felis.</p></a>     
+        <img class="slide" src="img/s2.jpg">  
+    </div>  
+  
+    <div class="showSlide">
+    	<img class="face" src="img/face.jpg"> 
+    	<p class="autor">Malesuada Etiam</p>
+    	<a href="blog.html"><h4>Donec consectetur purus</h4> 
+    	<p>Fusce Proin scelerisque pellentesque tincidunt enim.</p></a>      
+        <img class="slide" src="img/s3.jpg">  
+    </div> 
+
+    <div class="showSlide">  
+    	<img class="face" src="img/face.jpg"> 
+    	<p class="autor">Malesuada Etiam</p>
+    	<a href="design.html"><h4>Aenean ut bibendum elit</h4> 
+    	<p>Praesent non mollis magna, consequat dictum lacus.</p></a>    
+        <img class="slide" src="img/s4.jpg">  
+    </div>  
+
+<!-- Navigation arrows -->  
+    <a class="left" onclick="nextSlide(-1)">&#10094</a>  
+    <a class="right" onclick="nextSlide(1)">&#10095</a>  
+
+</div>  
+  
+<script type="text/javascript">  
+    var slide_index = 1;  
+    displaySlides(slide_index);  
+
+    function nextSlide(n) {  
+        displaySlides(slide_index += n);  
+    }  
+
+    function currentSlide(n) {  
+        displaySlides(slide_index = n);  
+    }  
+
+    function displaySlides(n) {  
+        var i;  
+        var slides = document.getElementsByClassName("showSlide");  
+        if (n > slides.length) { slide_index = 1 }  
+        if (n < 1) { slide_index = slides.length }  
+        for (i = 0; i < slides.length; i++) {  
+            slides[i].style.display = "none";  
+        }  
+        slides[slide_index - 1].style.display = "block";  
+    }  
+</script> 
+
 
 
 <main class="content">
 
-<!--2 SECTION-->
-<div class="second">
-<section class="two">
-	<figure><img src="img/blog/6.1.jpg" alt="image"></figure>
-	<h2>Etiam ullamcorper</h2>
-	<p>Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies</p>
-</section>
-
-<section class="two">
-	<figure><img src="img/blog/10.1.jpg" alt="image"></figure>
-	<h2>Etiam ullamcorper</h2>
-	<p>Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies</p>
-</section>
+<!--width 70%-->
+<div class="article">
+<article>
+<h1>Mauris eu viverra.</h1>
+<p>Donec finibus tempus nisi, non aliquam est. Vivamus eu neque sed ante molestie rhoncus aliquam sed massa. Etiam luctus, sem eget gravida vestibulum, magna risus sollicitudin nunc, nec cursus mi neque non metus. Praesent scelerisque id massa eget molestie. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pellentesque tincidunt enim, sit amet sagittis massa faucibus in. Morbi id magna a felis varius elementum. Quisque aliquam non sapien ac finibus. Praesent non mollis magna, consequat dictum lacus. Praesent id ex quis ex pharetra rhoncus. Vivamus nulla velit, bibendum non eros nec, maximus rhoncus metus. Donec sagittis molestie nisl, sed maximus purus pharetra vel.</p>
+<p>Donec finibus tempus nisi, non aliquam est. Vivamus eu neque sed ante molestie rhoncus aliquam sed massa. Quisque aliquam non sapien ac finibus. Etiam luctus, sem eget gravida vestibulum, magna risus sollicitudin nunc, nec cursus mi neque non metus. Praesent scelerisque id massa eget molestie. adipiscing elit. Proin pellentesque tincidunt enim, sit amet sagittis massa faucibus in. Morbi id magna a felis varius elementum. Vestibulum quis placerat lorem. Mauris tincidunt tempus felis, ut ornare ante blandit a. Quisque aliquam non sapien ac finibus. Vivamus nulla velit, bibendum non eros nec, maximus rhoncus metus. Donec sagittis molestie nisl, sed maximus purus pharetra vel. Donec porttitor et nibh nec aliquam. Suspendisse sodales eros vitae laoreet varius.</p>
+</article>
 </div>
+
+<!---LATES IMAGES---->
+<aside class="sidebar">
+    <h4>Lates images</h4>
+        <div class="lates-images">
+            <a href="#"><img class="sidebar" src="img/instagram1.jpg" alt="image">
+            <a href="#"><img class="sidebar" src="img/instagram2.jpg" alt="image">
+            <a href="#"><img class="sidebar" src="img/instagram3.jpg" alt="image">
+        </div>
+        <div class="lates-images">
+            <a href="#"><img class="sidebar" src="img/instagram4.jpg" alt="image">
+            <a href="#"><img class="sidebar" src="img/instagram5.jpg" alt="image">
+            <a href="#"><img class="sidebar" src="img/instagram6.jpg" alt="image">            
+        </div>  
+        <div class="lates-images">
+            <a href="#"><img class="sidebar" src="img/instagram1.jpg" alt="image">
+            <a href="#"><img class="sidebar" src="img/instagram2.jpg" alt="image">
+            <a href="#"><img class="sidebar" src="img/instagram6.jpg" alt="image">            
+        </div>                
+</aside>
 
 
 
 <!--3 SECTIONS-->
 <div class="third">
-	<section class="three">
-		<figure><img src="img/blog/1.jpg" alt="image"></figure>
-		<h2>Etiam ullamcorper</h2>
-		<p>Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies</p>
-	</section>
+    <section class="one-three">
+        <a href="#"><img src="img/instagram1.jpg" alt="image"></a>
+        <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+        <p>Lorem ipsum dolor sit amet enim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas malesuada elit lectus felis, malesuada ultricies</p>
+        <p class="data">Maecenas<a class="camera" href="#"><i class="fa fa-camera"></i></a>1 maja 2016</p>
+    </section>
 
-	<section class="three">
-		<figure><img src="img/blog/5.jpg" alt="image"></figure>
-		<h2>Etiam ullamcorper</h2>
-		<p>Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies</p>
-	</section>
+    <section class="one-three">
+        <a href="#"><img src="img/instagram2.jpg" alt="image"></a>
+        <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+        <p>Lorem ipsum dolor sit amet enim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas malesuada elit lectus felis, malesuada ultricies</p>
+        <p class="data">Maecenas<a class="camera" href="#"><i class="fa fa-camera"></i></a>1 maja 2016</p>
+    </section>
 
-	<section class="three">
-		<figure><img src="img/blog/1.jpg" alt="image"></figure>
-		<h2>Etiam ullamcorper</h2>
-		<p>Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies</p>
-	</section>
-</div>
-
-
-<!--4 SECTIONS-->
-<div class="fourth">
-	<section class="four">
-	<img src="img/blog/icon_100.png" alt="image">
-		<p>Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies</p>		
-	</section>
-
-	<section class="four">
-		<img src="img/blog/icon_100.png" alt="image">
-		<p>Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies</p>		
-	</section>
-
-	<section class="four">
-		<img src="img/blog/icon_100.png" alt="image">
-		<p>Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies</p>		
-	</section>
-
-	<section class="four">
-		<img src="img/blog/icon_100.png" alt="image">
-		<p>Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies</p>		
-	</section>			
+    <section class="one-three">
+        <a href="#"><img src="img/instagram3.jpg" alt="image"></a>
+        <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+        <p>Lorem ipsum dolor sit amet enim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas malesuada elit lectus felis, malesuada ultricies</p>
+        <p class="data">Maecenas<a class="camera" href="#"><i class="fa fa-camera"></i></a>1 maja 2016</p>
+    </section>
 </div>
 
 
 
 </main>
+
+
+
 
 
 <!-- FOOTER -->

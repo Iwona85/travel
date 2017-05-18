@@ -80,10 +80,10 @@ header{
 	font-family: verdana;
 	text-decoration: none;
 	color:white;
-	padding: 15px;
+	padding: 12px;
 	display: block;
 	border-radius: 5px;
-	margin-top: 10px;
+	margin-top: 15px;
 }
 
 .navigation a:hover{
@@ -104,7 +104,6 @@ header{
 	color: white;
 	font-size: 24px;
 	padding: 25px 10px;
-	line-height: 70px;
 }
 
 .social a:hover{
@@ -123,159 +122,79 @@ header{
 
 .content{
 	overflow: auto;
-	min-height: 1000px;
+	height: auto;
 	height: 100%;
 	margin-left: 7%;
 	margin-right: 7%;
 }
 
+/*--Slider--*/
+
+.left, .right {  
+	cursor: pointer;  
+	position: absolute;  
+	top: 20%;  
+	padding: 10px;  
+	color: black;  
+	font-weight: bold;  
+	font-size: 18px;  
+	border-radius: 5px;
+	background-color: #feaf12;
+	} 
 
 
-
-/*---2 SECTION---*/
-.second{
-	width: 100%;
-	border-bottom: 1px solid black;	
+.left{
+	left:30px;
 }
 
-.two{
-	float:left;
-	width: 50%;
-	text-align: center;
-	margin: 10px 0;
-	background-color: green;
+.right {  
+	right: 30px;  
+	border-radius: 5px; 
+}  
+   
+
+.showSlide{
+	position: relative;
 }
 
-.two img{
-	width:98%;
-}
-
-.two p{
-	padding:15px;
-}
-
-.two h2{
-	padding-top:15px;
-}
-
-
-/*---3 SECTION---*/
-
-.third{
+img.slide {
 	width: 100%;
 }
 
-.three{
-	float: left;
-	width: 33.333%;
-	text-align: center;
-	margin: 10px 0;
-}
-
-.three img{
-	width:85%;
-}
-
-.three p{
-	padding:15px;
-}
-
-.three h2{
-	padding-top:15px;
-}
-
-.one-three {
-	float: left;
-	width: 33.333%;
-	text-align: center;
-}
-
-.one-three img{
-	width:90%;
-	margin-top: 20px;
+.slidercontainer h4{
+	position: absolute;
+	left: 30px;
+	top: 70%;
+	color: white;
+	font-size:22px;
 }
 
 
-.one-three p{
-	padding:10px;
-	margin: 15px;
+.slidercontainer p{
+	position: absolute;
+	left: 30px;
+	top: 78%;
+	color: white;
+}
+
+p.autor{
+	font-size:14px;
+	top:58%;
+	left: 80px;
 }
 
 
-.one-three h2{
-	padding-top:15px;
-}
-
-/*----4 SECTIONS---*/
-
-.fourth{
-	width: 100%;
-}
-
-
-.four{
-	width: 25%;
-	float:left;
-	text-align: center;
-	margin: 20px 0;
-	padding-top: 10px;
-	border-top:1px solid black;
-	background-color: gray;
-}
-
-.four img{
-	margin: auto;
-	display: block;
-}
-
-.four p{
-	margin: 10px 15px;
+img.face{
+	width: 45px;
+	position: absolute;
+	left: 30px;
+	top: 55%;
+	border-radius: 100%;
 }
 
 
-/*----article---*/
 
-.article {
-	width: 70%;
-	float: left;
-}
-
-article {
-	width: 90%;
-}
-
-.article h1{
-	border-bottom: 5px solid #f2f2f2;
-	padding-bottom: 10px;
-	margin: 20px 0;
-}
-
-.article p{
-	color: #414141;
-}
-
-
-.article img{
-	height: 5%;
-}
-
-blockquote{
-	font-size: 16px;
-    text-align: center;
-    margin: 40px 70px;
-    padding: 0 0 0 35px;
-    color: #414141;
-    background: url(C:/Users/Iwona/projects/travel/img/quotes.png) no-repeat top left;
-}
-
-blockquote p{
-	font-size: 16px;
-	padding-right: 25px !important;
-	background: url(C:/Users/Iwona/projects/travel/img/quotes.png) no-repeat bottom right;
-}
-
-
-/*---sidebar---*/
+/*---SIDEBAR posts---*/
 
 .sidebar{
 	width: 30%;
@@ -286,7 +205,7 @@ blockquote p{
 	font-size:12px;
 }
 
-.sidebar img{
+img.sidebar {
 	margin-right: 10px;
 	float: left;
 }
@@ -311,6 +230,202 @@ blockquote p{
 .sidebar a:hover{
 	text-decoration: underline;
 }
+
+
+/*---LATES IMAGES----*/
+.lates-images{
+	width: 33.333%;
+	float: left;
+	margin-top: 20px;
+}
+
+
+ .lates-images img{
+ 	width: 100%;
+ 	outline: 1px solid white;
+    outline-offset: -1px;
+ }
+
+/*--AUTORS--*/
+
+
+.autors p{
+	text-align: center;
+	margin:0px 20px;
+}
+
+.autors h5{
+	text-align:center;
+	margin-bottom: 10px;
+}
+
+.autors li{
+	border-bottom: 1px solid #f0eee9;
+}
+
+.autors img{
+	border-radius: 100%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 10px;
+}
+
+
+/*--Instagram--*/
+
+.instagram{
+	width: 70%;
+	margin-top: 30px;
+	float: left;
+}
+
+.box{
+width:100%;
+}
+
+.container {
+  position: relative;
+  width: 30%;
+  float: left;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-image-outset: 2px solid white;
+  border-image-outset: 2px solid white;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 30%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #feaf12;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 16px;
+  position: absolute;
+  text-align: center;
+  margin:10px;
+}
+
+
+
+
+/*---3 SECTION---*/
+
+.third{
+	width: 100%;
+}
+
+
+.one-three {
+	float: left;
+	width: 33.333%;
+	text-align: center;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
+.one-three img{
+	width:100%;
+    outline: 2px solid white;
+    outline-offset: -2px;
+}
+
+
+.one-three p{
+	padding: 0px 10px 15px 10px;
+	color: #414141;
+}
+
+
+.one-three h4{
+	padding: 15px;
+}
+
+
+
+/*----article---*/
+
+.article {
+	width: 70%;
+	float: left;
+}
+
+article {
+	width: 90%;
+}
+
+.article h1{
+	border-bottom: 5px solid #f2f2f2;
+	padding-bottom: 10px;
+	margin: 20px 0;
+}
+
+.article p{
+	color: #414141;
+	margin-bottom: 20px;
+}
+
+.article img{
+	width: 100%;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+figcaption {
+	font-size: 12px;
+	text-align: center;
+	margin-bottom: 20px;
+	color: #414141;
+}
+
+a.more-button{
+	padding: 10px 18px;
+	color: white;
+	background-color: black;
+	border-radius: 5px;
+	text-decoration: none;
+	font-size: 12px;
+}
+
+a:hover.more-button{
+	background-color: #feaf12;
+}
+
+blockquote{
+	font-size: 16px;
+    text-align: center;
+    margin: 40px 70px;
+    padding: 0 0 0 35px;
+    color: #414141;
+    background: url(C:/Users/Iwona/projects/travel/img/quotes.png) no-repeat top left;
+}
+
+blockquote p{
+	font-size: 16px;
+	padding-right: 25px !important;
+	background: url(C:/Users/Iwona/projects/travel/img/quotes.png) no-repeat bottom right;
+}
+
+
+
+
+
 /*----FOOTER----*/
 
 footer{
@@ -343,28 +458,11 @@ footer img{
 /* iPads (portrait and landscape) ----------- */
 @media screen and (max-width: 1024px){
 
-#logo{
-	margin: 0 20px 0 20px;
-}
-
-
-nav ul li {
-	letter-spacing: 1;
-	padding: 0 5px;
-}
-
-
-nav ul li a{
-	font-size: 14px;
-}
-
 .social{
-	margin-right: 20px;
+	display: none;
 }
 
-.social a{
-	padding-left: 5px;
-}
+
 
 }
 
@@ -428,4 +526,6 @@ nav ul li a{
 
 
 }
+
+
 
