@@ -478,15 +478,12 @@ blockquote p{
 
 .formular {
 	margin-top: 50px;
-	width: 40%;
-	float: left;
-	position: relative;	
+	position: absolute;
+	left: 10%;
+	top: 10%;	
 }
 
 .contact {
-	margin-top: 50px;
-	width: 60%;
-	float: left;
 	position: relative;	
 }
 
@@ -503,6 +500,7 @@ input, textarea{
 	border: 1px solid gray;
 	padding: 6px;
 	margin-top: 7px;
+
 }
 
 form p{
