@@ -135,7 +135,7 @@ header{
 .left, .right {  
 	cursor: pointer;  
 	position: absolute;  
-	top: 50px;  
+	top: 150px;  
 	padding: 10px;  
 	color: black;  
 	font-weight: bold;  
@@ -500,6 +500,7 @@ input, textarea{
 	border: 1px solid gray;
 	padding: 6px;
 	margin-top: 7px;
+
 
 }
 
