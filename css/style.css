@@ -131,10 +131,11 @@ header{
 
 /*--Slider--*/
 
+
 .left, .right {  
 	cursor: pointer;  
 	position: absolute;  
-	top: 20%;  
+	top: 50px;  
 	padding: 10px;  
 	color: black;  
 	font-weight: bold;  
@@ -473,8 +474,54 @@ blockquote p{
 	background: url(https://iwona85.github.io/travel/img/quotes.png) no-repeat bottom right;
 }
 
+/*----contact---*/
+
+.formular {
+	margin-top: 50px;
+	width: 40%;
+	float: left;
+	position: relative;	
+}
+
+.contact {
+	margin-top: 50px;
+	width: 60%;
+	float: left;
+	position: relative;	
+}
+
+.contact img{
+	width: 100%; 
+}
 
 
+
+/*---formularz---*/
+
+
+input, textarea{
+	border: 1px solid gray;
+	padding: 6px;
+	margin-top: 7px;
+}
+
+form p{
+	margin-top: 13px;
+}
+
+form h3{
+	margin-top: 20px;
+}
+
+button.more-button{
+	margin: 10px 0px;
+	padding: 8px 16px;
+	color: white;
+	background-color: black;
+	border-radius: 5px;
+	text-decoration: none;
+	font-size: 12px;
+}
 
 
 /*----FOOTER----*/
