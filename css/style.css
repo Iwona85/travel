@@ -254,7 +254,7 @@ img.face{
 
 .sidebar p{
 	font-size:12px;
-	margin-bottom: 8px;
+	margin-bottom: 25px;
 }
 
 
@@ -692,7 +692,7 @@ button.more-button{
 
 
 	blockquote{
-	    margin: 5px;
+	    margin: 35px;
 	}
 
 	.article {
@@ -723,6 +723,7 @@ button.more-button{
 
 .one-three h4{
 	font-size: 16px;
+	margin: 0;
 }
 
  a.camera{
