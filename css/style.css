@@ -357,12 +357,13 @@ width:100%;
   height: 25%;
   width: 100%;
   opacity: 0;
-  transition: .5s linear;
-  background-color: #feaf12;
+  transition: 0.5s linear;
+  
 }
 
 .container:hover .overlay {
   opacity: 1;
+  background-color: #feaf12;
 }
 
 .text p{
