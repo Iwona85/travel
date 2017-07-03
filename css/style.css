@@ -543,6 +543,28 @@ blockquote p{
 }
 
 
+/*--About me INFO page--*/
+
+.about-me{
+	margin-top: 30px;
+	position: absolute;
+	left: 7%;
+	right: 7%;
+	top: 10%;	
+}
+
+.about-me h3{
+	margin: 10px 0 5px 0;
+}
+
+.about-me p{
+	font-size:13px;
+	line-height: 18px;
+}
+
+.about-me h5{
+	margin-top: 5px;
+}
 
 /*---formularz---*/
 
