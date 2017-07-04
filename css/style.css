@@ -579,15 +579,12 @@ button.more-button{
 
 /*--About me INFO page--*/
 
-.about-me{
-	margin-top: 30px;
-	position: absolute;
-	left: 7%;
-	right: 7%;
-	top: 10%;	
+
+.about-me h2{
+	margin: 15px 0;
 }
 
-.about-me h3{
+.about-me h4{
 	margin: 10px 0 5px 0;
 }
 
@@ -600,7 +597,16 @@ button.more-button{
 	margin-top: 5px;
 }
 
+.info img{
+	position: relative;
+	float: left;
+	width: 100%;
+}
 
+.about-me{
+	position: absolute;
+	margin: 0 7%;
+}
 
 
 /*-----MEDIA QUERIES------*/
@@ -658,6 +664,21 @@ button.more-button{
 .three-lines{
 	display: none;
 }
+
+.about-me h2{
+	margin: 13px 0;
+	font-size: 15px;
+}
+
+.about-me h4{
+	margin: 7px 0 5px 0;
+	font-size:13px;
+}
+
+.info img{
+	min-height: 750px;
+}
+
 
 }
 
@@ -767,6 +788,10 @@ p.data{
 .text p{
   font-size: 12px;
   margin:7px;
+}
+
+.info img{
+	min-height: 950px;
 }
 
 
