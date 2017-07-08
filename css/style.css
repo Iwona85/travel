@@ -106,6 +106,49 @@ header{
 /*---NAWIGACJA---*/
 
 
+.dropdown {
+    float: right;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;  
+	font-family: verdana;
+	text-decoration: none;
+	color: white;
+	background-color: inherit;
+	padding: 12px;
+	display: block;
+	border-radius: 5px;
+	margin-top: 15px;
+}
+
+.container a:hover, .dropdown:hover .dropbtn {
+    background-color: #feaf12;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    border-radius: 5px;
+    background-color: black;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: white;
+    padding: 12px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
 .navigation{
 	float: left;
 }
