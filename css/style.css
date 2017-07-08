@@ -614,6 +614,24 @@ button.more-button{
 /* iPads (portrait and landscape) ----------- */
 @media screen and (max-width: 1024px){
 
+.navigation a{
+	font-size: 13px;
+	padding: 10px;
+}	
+
+
+.slidercontainer h4{
+	left: 30px;
+	top: 70%;
+	font-size:22px;
+}
+
+
+.slidercontainer p{
+	left: 30px;
+	top: 90%;
+}
+
 .social{
 	display: none;
 }
