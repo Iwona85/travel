@@ -14,100 +14,42 @@
 <!-- HEADER -->
 <header>
 		<a href="index.html" id="logo"></a> <!--logo Travel-->
-		<nav>
-			<a href="#" id="menu-icon"></a>	<!-- logo menu dla wer. mobilnych-->
-				<ul class="navigation">
-					<li><a href="index.html" title="home" class="active">HOMEPAGE</a></li>
-					<li><a href="blog.html" title="blog">BLOG</a></li>
-					<li><a href="travel.html" title="travel">TRAVEL</a></li>
-					<li><a href="design.html" title="design">DESIGN</a></li>
-                    <li><a href="contact.html" title="contact">CONTACT</a></li>
-                      <div class="dropdown">
-                        <button class="dropbtn">ABOUT ME</button>
-                        <div class="dropdown-content">
-                          <a href="info.html" title="info">INFO</a>
-                          <a href="projects.html" title="projects">PROJECTS</a>
-                        </div>
-                      </div>
-				</ul>
-				<ul class="social">
-					<li style="float:right"><a href="#"><i class="fa fa-facebook-square"></i></a></li>
-					<li style="float:right"><a href="#"><i class="fa fa-twitter-square"></i></a></li>
-					<li style="float:right"><a href="#"><i class="fa fa-glide"></i></a></li>
-					<li style="float:right"><a href="#"><i class="fa fa-pinterest"></i></a></li>
-					<li style="float:right"><a href="#"><i class="fa fa-instagram"></i></a></li>
-				</ul>
-		</nav>
+
+        <div class="topnav" id="myTopnav">
+          <a href="index.html" title="home" class="active">HOMEPAGE</a>
+          <a href="blog.html" title="blog">BLOG</a>
+          <a href="travel.html" title="travel">TRAVEL</a>
+          <a href="design.html" title="design">DESIGN</a>
+          <a href="info.html" title="info">INFO</a>
+          <a href="projects.html" title="projects">PROJECTS</a>
+          <a href="contact.html" title="contact">CONTACT</a>
+          <a href="javascript:void(0);" style="font-size:24px; padding: 5px;" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
+
+        <div class="social">
+            <a href="#"><i class="fa fa-facebook-square"></i></a>
+            <a href="#"><i class="fa fa-twitter-square"></i></a>
+            <a href="#"><i class="fa fa-glide"></i></a>
+            <a href="#"><i class="fa fa-pinterest"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+        </div>
+
 </header>
 
-<!--Slider-->
 
 
-<div class="slidercontainer"> 
-
-    <div class="showSlide">
-    	<img class="face" alt="image" src="img/face.jpg">
-    	<p class="autor">Malesuada Etiam</p>
-    	<a href="blog.html"><h4>Maecenas elit lectus felis</h4> 
-    	<p>Fusce laoreet vestibulum nunc nec rutrum. Nulla sed sapien felis.</p></a>
-        <img class="slide" alt="image" src="img/s1.jpg">  
-    </div>  
-
-    <div class="showSlide">
-    	<img class="face" alt="image" src="img/face.jpg"> 
-    	<p class="autor">Malesuada Etiam</p>
-    	<a href="design.html"><h4>Suspendisse a pellentesque dui</h4> 
-    	<p>Fusce laoreet vestibulum nunc nec rutrum. Nulla sed sapien felis.</p></a>     
-        <img class="slide" alt="image" src="img/s2.jpg">  
-    </div>  
-  
-    <div class="showSlide">
-    	<img class="face" alt="image" src="img/face.jpg"> 
-    	<p class="autor">Malesuada Etiam</p>
-    	<a href="blog.html"><h4>Donec consectetur purus</h4> 
-    	<p>Fusce Proin scelerisque pellentesque tincidunt enim.</p></a>      
-        <img class="slide" alt="image" src="img/s3.jpg">  
-    </div> 
-
-    <div class="showSlide">  
-    	<img class="face" alt="image" src="img/face.jpg"> 
-    	<p class="autor">Malesuada Etiam</p>
-    	<a href="design.html"><h4>Aenean ut bibendum elit</h4> 
-    	<p>Praesent non mollis magna, consequat dictum lacus.</p></a>    
-        <img class="slide" alt="image"  src="img/s4.jpg">  
-    </div>  
-
-<!-- Navigation arrows -->  
-    <a class="left" onclick="nextSlide(-1)">&#10094;</a>  
-    <a class="right" onclick="nextSlide(1)">&#10095;</a>  
-
-</div>  
-  
 <script type="text/javascript">  
-    var slide_index = 1;  
-    displaySlides(slide_index);  
-
-    function nextSlide(n) {  
-        displaySlides(slide_index += n);  
-    }  
-
-    function currentSlide(n) {  
-        displaySlides(slide_index = n);  
-    }  
-
-    function displaySlides(n) {  
-        var i;  
-        var slides = document.getElementsByClassName("showSlide");  
-        if (n > slides.length) { slide_index = 1 }  
-        if (n < 1) { slide_index = slides.length }  
-        for (i = 0; i < slides.length; i++) {  
-            slides[i].style.display = "none";  
-        }  
-        slides[slide_index - 1].style.display = "block";  
-    }  
+    function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}  
 </script> 
 
-
+<div class="full-width-image"><img src="img/full-width-image.jpg" alt="Donec"></div>
 
 <main class="content">
 
