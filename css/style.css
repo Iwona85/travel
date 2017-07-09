@@ -695,7 +695,7 @@ button.more-button{
     margin-right: 7%;
 }
 
-.topnav.responsive {position: relative;}
+.topnav.responsive {position: relative; z-index: 1;}
 .topnav.responsive .icon {
     position: absolute;
     right: 0;
