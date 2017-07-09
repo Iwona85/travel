@@ -617,19 +617,6 @@ button.more-button{
 @media screen and (max-width: 1024px){
 
 
-
-.slidercontainer h4{
-	left: 30px;
-	top: 70%;
-	font-size:22px;
-}
-
-
-.slidercontainer p{
-	left: 30px;
-	top: 90%;
-}
-
 .social{
 	display: none;
 }
@@ -646,7 +633,7 @@ button.more-button{
 }
 
 
- .lates-images img{
+.lates-images img{
  	width: 100%;
  	outline: 1px solid white;
     outline-offset: -1px;
