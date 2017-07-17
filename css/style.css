@@ -98,7 +98,7 @@ header{
 	float: left;
 	width: 100px;
 	height: 70px;
-	margin: 0 15px 0 7%;
+	margin: 0 15px 0 0;
 	background: url(https://iwona85.github.io/travel/img/logo.png) no-repeat center;
 }
 
@@ -150,6 +150,12 @@ header{
 
 .social a:hover{
 	color: #feaf12;
+}
+
+
+.svg-logo {
+	float: left;
+	margin: 7px 0 0 7%;
 }
 
 /*-----kONIEC NAWIGACJI-----*/
