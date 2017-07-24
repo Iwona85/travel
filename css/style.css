@@ -194,70 +194,34 @@ header{
 }
 
 
-/*--Slider--*/
+/*--Slider ASIDE--*/
 
-
-.left, .right {  
-	cursor: pointer;  
-	position: absolute;  
-	top: 150px;  
-	padding: 10px;  
-	color: black;  
-	font-weight: bold;  
-	font-size: 18px;  
-	border-radius: 5px;
-	background-color: #feaf12;
-	} 
-
-
-.left{
-	left:30px;
+#slider{
+	overflow: hidden;
 }
 
-.right {  
-	right: 30px;  
-	border-radius: 5px; 
-}  
-   
+#slider figure img{
+	width: 25%;
+	float:left;
+}
 
-.showSlide{
+#slider figure{
+	width: 400%;
 	position: relative;
+	left: 0;
+	animation: 15s slider infinite;
 }
 
-img.slide {
-	width: 100%;
+@keyframes slider {
+	0%{left: 0%;}
+	30% {left:0%;}
+	33%{left: -100%;}
+	60%{left: -100%}
+	66%{left: -200%;}
+	95%{left: -200%}
+	100%{left: -300%;}
 }
 
-.slidercontainer h4{
-	position: absolute;
-	left: 30px;
-	top: 70%;
-	color: white;
-	font-size:22px;
-}
-
-
-.slidercontainer p{
-	position: absolute;
-	left: 30px;
-	top: 78%;
-	color: white;
-}
-
-p.autor{
-	font-size:14px;
-	top:58%;
-	left: 80px;
-}
-
-
-img.face{
-	width: 45px;
-	position: absolute;
-	left: 30px;
-	top: 55%;
-	border-radius: 100%;
-}
 
 
 
